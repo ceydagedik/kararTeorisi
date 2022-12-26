@@ -32,9 +32,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     });
 
-
-    //// Yuvarlakalrı yanyana ekle ve bir tane tanım tablosu ekle
-
     var ctx2 = document.getElementById('myChart2');
     var myChart2 = new Chart(ctx2, {
         type: 'pie',
@@ -60,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var myChart3 = new Chart(ctx3, {
         type: 'pie',
         data: {
-            // labels: ["1990 ve öncesi","1991-1995","1996-2000","2001-2005","2006-2010","2011-2015","2016 ve sonrası","Bilinmeyen"],
+            labekls: ["1990 ve öncesi","1991-1995","1996-2000","2001-2005","2006-2010","2011-2015","2016 ve sonrası","Bilinmeyen"],
             datasets: [{
                 data: [9.3,8.4,13.1,10.4,13.8,17.3,27.7],
                 backgroundColor: ["#004C99","#009999","#CC0000","#B52BF0","#CCCC00","#EBC7B8","#009900","#FF99CC"],

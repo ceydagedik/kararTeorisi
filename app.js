@@ -69,7 +69,6 @@ document.addEventListener("DOMContentLoaded", function() {
         var myChart3 = new Chart(ctx3, {
             type: 'pie',
             data: {
-                // labels: ["1990 ve öncesi","1991-1995","1996-2000","2001-2005","2006-2010","2011-2015","2016 ve sonrası","Bilinmeyen"],
                 datasets: [{
                     data: [9.3,8.4,13.1,10.4,13.8,17.3,27.7],
                     backgroundColor: ["#004C99","#009999","#CC0000","#B52BF0","#CCCC00","#EBC7B8","#009900","#FF99CC"],
@@ -92,7 +91,6 @@ document.addEventListener("DOMContentLoaded", function() {
     var myChart4 = new Chart(ctx4, {
         type: 'pie',
         data: {
-            // labels: ["1990 ve öncesi","1991-1995","1996-2000","2001-2005","2006-2010","2011-2015","2016 ve sonrası","Bilinmeyen"],
             datasets: [{
                 data: [15.2,10.4,14.3,10.2,13.3,16.0,20.5],
                 backgroundColor: ["#004C99","#009999","#CC0000","#B52BF0","#CCCC00","#EBC7B8","#009900","#FF99CC"],
@@ -114,7 +112,6 @@ document.addEventListener("DOMContentLoaded", function() {
     var myChart5 = new Chart(ctx5, {
         type: 'pie',
         data: {
-            // labels: ["1990 ve öncesi","1991-1995","1996-2000","2001-2005","2006-2010","2011-2015","2016 ve sonrası","Bilinmeyen"],
             datasets: [{
                 data: [18.0,14.4,16.3,9.5,10.9,16.9,14.0],
                 backgroundColor: ["#004C99","#009999","#CC0000","#B52BF0","#CCCC00","#EBC7B8","#009900","#FF99CC"],
@@ -137,7 +134,6 @@ document.addEventListener("DOMContentLoaded", function() {
     var myChart6 = new Chart(ctx6, {
         type: 'pie',
         data: {
-            // labels: ["1990 ve öncesi","1991-1995","1996-2000","2001-2005","2006-2010","2011-2015","2016 ve sonrası","Bilinmeyen"],
             datasets: [{
                 data: [33.1,11.6,15.8,7.5,12.3,10.6,9.0],
                 backgroundColor: ["#004C99","#009999","#CC0000","#B52BF0","#CCCC00","#EBC7B8","#009900","#FF99CC"],

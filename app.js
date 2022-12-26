@@ -1,7 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-
-
-
     
     var ctx = document.getElementById('myChart');
     if (ctx) {
@@ -108,6 +105,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     var ctx5 = document.getElementById('myChart5');
+
     if (ctx5) {
     var myChart5 = new Chart(ctx5, {
         type: 'pie',
@@ -171,8 +169,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     var ctx9 = document.getElementById('myChart9');
+    
     if (ctx9) {
-
     var myChart9 = new Chart(ctx9, {
         type: 'line',
         data: {

@@ -41,8 +41,7 @@
     justify-content: center;
     display: flex;
     /* background-color: black; */
-  } 
-
+} 
 
 .flex-container2 {
     height: 800px;
@@ -51,10 +50,7 @@
     display: flex;
     /* background-color: gray; */
     align-items: stretch;
-
-  } 
-
-
+} 
 
 .flex-container3 {
     /* height: 400px; */
@@ -63,24 +59,19 @@
     align-items: stretch;
     display: flex;
     /* background-color: black; */
-  } 
-
-
-
+} 
 
 .chart-container-1 {
     align-items: center;
     justify-content: center;
     display: flex;
-  }
+}
 
 .chart-container-2 {
     align-items: center;
     justify-content: center;
     display: flex;
-  }
-
-
+}
 
 .chart-little-1 {
     align-items: center;
@@ -97,7 +88,6 @@
     
 }
 
-
 .chart-little-3 {
     align-items: center;
     justify-content: center;
@@ -106,11 +96,8 @@
     display: flex;
 }
 
-
-
 .chart-center {
     align-items: center;
     justify-content: center;
     display: flex;
-
 }

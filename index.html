@@ -5,55 +5,83 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Karar Teorisi</title>
-        <style>
-            #myChart{
-                max-width: 900px;
-            }
-
-            #myChart2{
-                max-width: 500px;
-            }
-
-            #myChart3{
-                max-width: 500px;
-            }
-
-            #myChart4{
-                max-width: 500px;
-            }
-
-            #myChart5{
-                max-width: 500px;
-            }
-
-            #myChart6{
-                max-width: 500px;
-            }
-
-            #myChart7{
-                max-width: 500px;
-            }
-
-            #myChart8{
-                max-width: 500px;
-            }
-
-            #myChart9{
-                max-width: 500px;
-            }
-        </style>
+        <link rel="stylesheet" href="chart.css">
     </head>
 
     <body>
-        <canvas id="myChart"></canvas>
-        <canvas id="myChart2"></canvas>
-        <canvas id="myChart3"></canvas>
-        <canvas id="myChart4"></canvas>
-        <canvas id="myChart5"></canvas>
-        <canvas id="myChart6"></canvas>
-        <canvas id="myChart7"></canvas>
-        <canvas id="myChart8"></canvas>
-        <canvas id="myChart9"></canvas>
+
+        <div class="flex-container1">
+
+            <canvas id="myChart"></canvas>
+
+          </div>
+
+
+          <div class="flex-container3">
+
+            <div class="chart-container-1" style="flex-grow: 1">
+                <canvas id="myChart8"></canvas>
+            </div>
+            <div class="chart-container-2" style="flex-grow: 1">
+                <canvas id="myChart9"></canvas>
+            </div>
+
+          </div>
+
+
+
+
+          <div class="flex-container2">
+
+        <div class="chart-little-1" style="flex-grow: 1">
+        
+        <div class = "chart-center" style="flex-grow: 1"><canvas id="myChart3"></canvas></div>
+        <div class = "chart-center" style="flex-grow: 1"><canvas id="myChart4"></canvas></div>
+
+        </div>
+        
+          <div class="chart-little-2" style="flex-grow: 1">
+        
+
+            <canvas id="myChart2"></canvas>
+
+            <!-- <div class = "chart-center" ><canvas id="myChart9"></canvas></div> -->
+
+        
+        </div>
+
+
+          <div class="chart-little-3" style="flex-grow: 1">
+        
+            <div class = "chart-center" style="flex-grow: 1"><canvas id="myChart6"></canvas></div>
+            <div class = "chart-center" style="flex-grow: 1"><canvas id="myChart5"></canvas></div>
+    
+        
+        </div>
+
+
+
+          </div>
+
+
+
+
+           <!-- <div class="flex-container2">
+
+            <div class="chart-container-1">
+                <canvas id="myChart2"></canvas>
+            </div>
+            <div class="chart-container-2">
+                <canvas id="myChart3"></canvas>
+            </div>
+            <div class="chart-container-3">
+                <canvas id="myChart4"></canvas>
+            </div>
+
+          </div> -->
+
+
+
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min.js" integrity="sha512-SuxO9djzjML6b9w9/I07IWnLnQhgyYVSpHZx0JV97kGBfTIsUYlWflyuW4ypnvhBrslz1yJ3R+S14fdCWmSmSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

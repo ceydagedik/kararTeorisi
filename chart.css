@@ -1,0 +1,116 @@
+
+#myChart{
+    max-width: 800px;
+} 
+
+#myChart2{
+    max-width: 600px;
+}
+
+#myChart3{
+    max-width: 500px;   
+}
+
+#myChart4{
+    max-width: 500px;
+}
+
+#myChart5{
+    max-width: 500px;
+}
+
+#myChart6{
+    max-width: 500px;
+}
+
+#myChart7{
+    max-width: 500px;
+}
+
+#myChart8{
+    max-width: 500px;
+}
+
+#myChart9{
+    max-width: 500px;
+}
+
+.flex-container1 {
+    /* height: 400px; */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* background-color: black; */
+  } 
+
+
+.flex-container2 {
+    height: 800px;
+    /* align-items: center;
+    justify-content: center; */
+    display: flex;
+    /* background-color: gray; */
+    align-items: stretch;
+
+  } 
+
+
+
+.flex-container3 {
+    /* height: 400px; */
+    /* align-items: center;
+    justify-content: center; */
+    align-items: stretch;
+    display: flex;
+    /* background-color: black; */
+  } 
+
+
+
+
+.chart-container-1 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+.chart-container-2 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+
+
+.chart-little-1 {
+    align-items: center;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    display: flex;
+}
+
+.chart-little-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.chart-little-3 {
+    align-items: center;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    display: flex;
+}
+
+
+
+.chart-center {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}

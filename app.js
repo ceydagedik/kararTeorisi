@@ -38,14 +38,21 @@ document.addEventListener("DOMContentLoaded", function() {
     var ctx2 = document.getElementById('myChart2');
     var myChart2 = new Chart(ctx2, {
         type: 'pie',
+
         data: {
             labels: ["1990 ve öncesi","1991-1995","1996-2000","2001-2005","2006-2010","2011-2015","2016 ve sonrası","Bilinmeyen"],
             datasets: [{
-                label: 'Girişim', /////////Titlelar okunmuyor çözüm bul
                 data: [5.6,5.5,8.8,9.2,12.3,17.0,41.6],
                 backgroundColor: ["#004C99","#009999","#CC0000","#B52BF0","#CCCC00","#EBC7B8","#009900","#FF99CC"],
             }],
         },
+        options: {
+            title: {
+                display: true,
+                text: 'Girişim',
+                fontColor: 'blue'
+        }
+    },
 
     });
 
@@ -53,71 +60,77 @@ document.addEventListener("DOMContentLoaded", function() {
     var myChart3 = new Chart(ctx3, {
         type: 'pie',
         data: {
-            labels: ["1990 ve öncesi","1991-1995","1996-2000","2001-2005","2006-2010","2011-2015","2016 ve sonrası","Bilinmeyen"],
+            // labels: ["1990 ve öncesi","1991-1995","1996-2000","2001-2005","2006-2010","2011-2015","2016 ve sonrası","Bilinmeyen"],
             datasets: [{
-                label: 'İstihdam', /////////Titlelar okunmuyor çözüm bul
                 data: [9.3,8.4,13.1,10.4,13.8,17.3,27.7],
                 backgroundColor: ["#004C99","#009999","#CC0000","#B52BF0","#CCCC00","#EBC7B8","#009900","#FF99CC"],
             }],
         },
-
+        options: {
+            title: {
+                display: true,
+                text: 'İstihdam',
+                fontColor: 'blue'
+        }
+      },
     });
 
     var ctx4 = document.getElementById('myChart4');
     var myChart4 = new Chart(ctx4, {
         type: 'pie',
         data: {
-            labels: ["1990 ve öncesi","1991-1995","1996-2000","2001-2005","2006-2010","2011-2015","2016 ve sonrası","Bilinmeyen"],
+            // labels: ["1990 ve öncesi","1991-1995","1996-2000","2001-2005","2006-2010","2011-2015","2016 ve sonrası","Bilinmeyen"],
             datasets: [{
-                label: 'Ciro', /////////Titlelar okunmuyor çözüm bul
                 data: [15.2,10.4,14.3,10.2,13.3,16.0,20.5],
                 backgroundColor: ["#004C99","#009999","#CC0000","#B52BF0","#CCCC00","#EBC7B8","#009900","#FF99CC"],
             }],
         },
-
+        options: {
+            title: {
+                display: true,
+                text: 'Ciro',
+                fontColor: 'blue'
+        }
+      },
     }); 
 
     var ctx5 = document.getElementById('myChart5');
     var myChart5 = new Chart(ctx5, {
         type: 'pie',
         data: {
-            labels: ["1990 ve öncesi","1991-1995","1996-2000","2001-2005","2006-2010","2011-2015","2016 ve sonrası","Bilinmeyen"],
+            // labels: ["1990 ve öncesi","1991-1995","1996-2000","2001-2005","2006-2010","2011-2015","2016 ve sonrası","Bilinmeyen"],
             datasets: [{
-                label: 'İhracat', /////////Titlelar okunmuyor çözüm bul
                 data: [18.0,14.4,16.3,9.5,10.9,16.9,14.0],
                 backgroundColor: ["#004C99","#009999","#CC0000","#B52BF0","#CCCC00","#EBC7B8","#009900","#FF99CC"],
             }],
         },
-
+        options: {
+            title: {
+                display: true,
+                text: 'İhracat',
+                fontColor: 'blue'
+        }
+      },
     });
 
     var ctx6 = document.getElementById('myChart6');
     var myChart6 = new Chart(ctx6, {
         type: 'pie',
         data: {
-            labels: ["1990 ve öncesi","1991-1995","1996-2000","2001-2005","2006-2010","2011-2015","2016 ve sonrası","Bilinmeyen"],
+            // labels: ["1990 ve öncesi","1991-1995","1996-2000","2001-2005","2006-2010","2011-2015","2016 ve sonrası","Bilinmeyen"],
             datasets: [{
-                label: 'İthalat', /////////Titlelar okunmuyor çözüm bul
                 data: [33.1,11.6,15.8,7.5,12.3,10.6,9.0],
                 backgroundColor: ["#004C99","#009999","#CC0000","#B52BF0","#CCCC00","#EBC7B8","#009900","#FF99CC"],
             }],
         },
-
+        options: {
+            title: {
+                display: true,
+                text: 'İthalat',
+                fontColor: 'blue'
+        }
+      },
     });
-
-    // var ctx7 = document.getElementById('myChart7');
-    // var myChart7 = new Chart(ctx7, {
-    //     type: 'bar',
-    //     data: {
-    //         labels: ["1990 ve öncesi","1991-1995","1996-2000","2001-2005","2006-2010","2011-2015","2016 ve sonrası","Bilinmeyen"],
-    //         datasets: [{
-    //             label: 'İthalat', /////////Titlelar okunmuyor çözüm bul
-    //             data: [33.1,11.6,15.8,7.5,12.3,10.6,9.0],
-    //             backgroundColor: ["#004C99","#009999","#CC0000","#B52BF0","#CCCC00","#EBC7B8","#009900","#FF99CC"],
-    //         }],
-    //     },
-
-    // });
 
     var ctx8 = document.getElementById('myChart8');
     var myChart8 = new Chart(ctx8, {
@@ -125,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function() {
         data: {
             labels: [2012,2013,2014,2015,2016,2017,2018,2019,2020,2021],
             datasets: [{
-                label: 'Girişimlerin doğum oranı(%),2012-2021', /////////Titlelar okunmuyor çözüm bul
+                label: 'Girişimlerin doğum oranı(%),2012-2021',    
                 data: [14.3,14.0,13.7,13.4,13.0,13.5,13.2,12.9,14.7,16.0],
                 backgroundColor: "blue",
                 fill: false,
@@ -140,7 +153,7 @@ document.addEventListener("DOMContentLoaded", function() {
         data: {
             labels: [2012,2013,2014,2015,2016,2017,2018,2019,2020,2021],
             datasets: [{
-                label: 'Doğan girişimlerin istihdamdaki payı(%),2012-2021', /////////Titlelar okunmuyor çözüm bul
+                label: 'Doğan girişimlerin istihdamdaki payı(%),2012-2021',
                 data: [5.8,5.7,5.6,5.8,5.3,5.3,5.4,4.2,5.0,5.6],
                 backgroundColor: "green",
                 fill: false,

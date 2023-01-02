@@ -66,6 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var myChart3 = new Chart(ctx3, {
             type: 'pie',
             data: {
+                labels: ["1990 ve öncesi","1991-1995","1996-2000","2001-2005","2006-2010","2011-2015","2016 ve sonrası","Bilinmeyen"],
                 datasets: [{
                     data: [9.3,8.4,13.1,10.4,13.8,17.3,27.7],
                     backgroundColor: ["#004C99","#009999","#CC0000","#B52BF0","#CCCC00","#EBC7B8","#009900","#FF99CC"],
@@ -88,6 +89,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var myChart4 = new Chart(ctx4, {
         type: 'pie',
         data: {
+            labels: ["1990 ve öncesi","1991-1995","1996-2000","2001-2005","2006-2010","2011-2015","2016 ve sonrası","Bilinmeyen"],
             datasets: [{
                 data: [15.2,10.4,14.3,10.2,13.3,16.0,20.5],
                 backgroundColor: ["#004C99","#009999","#CC0000","#B52BF0","#CCCC00","#EBC7B8","#009900","#FF99CC"],
@@ -110,6 +112,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var myChart5 = new Chart(ctx5, {
         type: 'pie',
         data: {
+            labels: ["1990 ve öncesi","1991-1995","1996-2000","2001-2005","2006-2010","2011-2015","2016 ve sonrası","Bilinmeyen"],
             datasets: [{
                 data: [18.0,14.4,16.3,9.5,10.9,16.9,14.0],
                 backgroundColor: ["#004C99","#009999","#CC0000","#B52BF0","#CCCC00","#EBC7B8","#009900","#FF99CC"],
@@ -132,6 +135,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var myChart6 = new Chart(ctx6, {
         type: 'pie',
         data: {
+            labels: ["1990 ve öncesi","1991-1995","1996-2000","2001-2005","2006-2010","2011-2015","2016 ve sonrası","Bilinmeyen"],
             datasets: [{
                 data: [33.1,11.6,15.8,7.5,12.3,10.6,9.0],
                 backgroundColor: ["#004C99","#009999","#CC0000","#B52BF0","#CCCC00","#EBC7B8","#009900","#FF99CC"],
@@ -142,8 +146,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 display: true,
                 text: 'İthalat',
                 fontColor: 'blue'
-        }
-      },
+            }
+        },
     });
         
     }
@@ -163,6 +167,24 @@ document.addEventListener("DOMContentLoaded", function() {
             }],
         },
 
+        options: {
+            plugins: {
+            datalabels: {
+                color: '#111',
+                textAlign: 'center',
+                font: {
+                    lineHeight: 1.6
+                },
+                formatter: function(value) {
+                    var a = ctx8.Chart.data.labels[ctx8];
+                    console.log(a);
+                    return a;
+
+            }
+        }},
+
+    }
+
     });        
     }
 
@@ -178,6 +200,44 @@ document.addEventListener("DOMContentLoaded", function() {
             datasets: [{
                 label: 'Doğan girişimlerin istihdamdaki payı(%),2012-2021',
                 data: [5.8,5.7,5.6,5.8,5.3,5.3,5.4,4.2,5.0,5.6],
+                backgroundColor: "blue",
+                fill: false,
+            }],
+        },
+
+    });        
+    }
+
+    var ctx10 = document.getElementById('myChart10');
+
+    if (ctx10) {
+    var myChart10 = new Chart(ctx10, {
+        type: 'line',
+        data: {
+            labels: [2010,2011,2012,2013,2014,2015,2016,2017,2018,2019],
+            datasets: [{
+                label: 'Girişimlerin ölüm oranı(%),2010-2019',    
+                data: [12.8,12.4,12.1,11.7,11.4,11.3,11.1,12.2,11.4,12.3],
+                backgroundColor: "green",
+                fill: false,
+            }],
+        },
+
+    });        
+    }
+
+
+
+    var ctx11 = document.getElementById('myChart11');
+    
+    if (ctx11) {
+    var myChart11 = new Chart(ctx11, {
+        type: 'line',
+        data: {
+            labels: [2010,2011,2012,2013,2014,2015,2016,2017,2018,2019],
+            datasets: [{
+                label: 'Ölen girişimler nedeniyle kaybedilen istihdam payı(%),2010-2019',    
+                data: [4.6,4.4,4.5,4.5,4.2,4.3,4.2,4.25,4.3,4.3],
                 backgroundColor: "green",
                 fill: false,
             }],

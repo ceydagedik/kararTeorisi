@@ -167,27 +167,8 @@ document.addEventListener("DOMContentLoaded", function() {
             }],
         },
 
-        options: {
-            plugins: {
-            datalabels: {
-                color: '#111',
-                textAlign: 'center',
-                font: {
-                    lineHeight: 1.6
-                },
-                formatter: function(value) {
-                    var a = ctx8.Chart.data.labels[ctx8];
-                    console.log(a);
-                    return a;
-
-            }
-        }},
-
-    }
-
-    });        
-    }
-
+    }); 
+    }   
 
 
     var ctx9 = document.getElementById('myChart9');
@@ -243,7 +224,8 @@ document.addEventListener("DOMContentLoaded", function() {
             }],
         },
 
-    });        
-    }
-
+    });
+  }
 })
+
+
